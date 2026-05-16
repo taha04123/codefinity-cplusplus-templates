@@ -1,8 +1,8 @@
 #include <iostream>
 
-Template swap
-void swap(int &a, int &b) {
-    int temp = a;  // Store a in temp
+template<typename T>
+void swap(T &a, T &b) {
+    T temp = a;  // Store a in temp
     a = b;        // Assign b to a
     b = temp;    // Assign temp (original a) to b
 }
@@ -11,5 +11,5 @@ int main()
 {
     char digit = '3';
     char letter = 'a';
-    swap<___>(digit, letter);
+    swap<char>(digit, letter);
 }
