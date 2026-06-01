@@ -1,0 +1,11 @@
+#include <iostream>
+
+template<int I1, int I2>
+int Sum() { return I1 + I2; } // Return the sum
+
+int main() 
+{
+    const int options = 25;
+    const int operations = 19;
+    std::cout << Sum<options, operations>() << std::endl;
+}
