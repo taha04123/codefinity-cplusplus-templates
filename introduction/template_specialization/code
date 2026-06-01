@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+
+template<typename T>
+T TemplateFunction(T value) { return value; }
+
+// Write your code here
+// ...
+template<>
+std::string TemplateFunction(std::string value) {
+    return "Specialized: " + value; 
+}
+
+int main()
+{
+    std::cout << TemplateFunction<int>(5) << std::endl;
+    // The code below has to output "Specialized: five"
+    std::cout << TemplateFunction<std::string>("five") << std::endl;
+}
