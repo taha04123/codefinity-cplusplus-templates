@@ -1,0 +1,11 @@
+#include <iostream>
+#include <array>
+#include <utility>
+#include <vector>
+
+int main() 
+{
+    std::pair<int, std::string> p(1, "c<>definity");
+    std::array<char, 5> arr{ '1', '2', '3', '4', '5' };
+    std::vector<int> vec{ 1, 2, 3, 4, 5 }; 
+}
