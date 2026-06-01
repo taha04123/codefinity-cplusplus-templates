@@ -1,0 +1,16 @@
+#include <iostream>
+
+// Implement template function here
+template <typename T>
+
+T GetValue(T result){
+    return result;
+}
+
+int main() 
+{
+    std::cout << GetValue<int>(42) << std::endl;
+    std::cout << GetValue<std::string>("c<>definity") << std::endl;
+    std::cout << GetValue<float>(21.55) << std::endl;
+    std::cout << GetValue<bool>(false) << std::endl;
+}
